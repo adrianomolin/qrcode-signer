@@ -35,7 +35,7 @@ func main() {
 
 func GenerateQR(w http.ResponseWriter, r *http.Request) {
 	// Create some QR code data
-	qrData := QRData{Data: "Teste"}
+	qrData := QRData{Data: "Teste 2"}
 
 	// Sign the data using RSA and SHA256
 	token := jwt.NewWithClaims(jwt.SigningMethodRS256, jwt.MapClaims{
